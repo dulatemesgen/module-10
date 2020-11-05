@@ -8,8 +8,15 @@ testing student class
 
 class Student:
     """Student class"""
+    MAJORS = ("Maths", "Computers", "English", "Philosophy")
+
 
     def __init__(self, lname, fname, major, gpa=0.0):
+        name_characters = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'-")
+        if not (name_characters.issuperset(lname) and name_characters.issuperset(fname)):
+            raise ValueError
+        if major not in self.MAJORS
+            raise ValueError
         self.last_name = lname
         self.first_name = fname
         self.major = major
