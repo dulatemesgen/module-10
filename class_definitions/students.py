@@ -15,7 +15,7 @@ class Student:
         name_characters = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'-")
         if not (name_characters.issuperset(lname) and name_characters.issuperset(fname)):
             raise ValueError
-        if major not in self.MAJORS
+        if major not in self.MAJORS:
             raise ValueError
         self.last_name = lname
         self.first_name = fname
