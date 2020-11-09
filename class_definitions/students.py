@@ -2,7 +2,7 @@
 Author: Dula Temesgen
 program: students.py
 
-testing student class
+creating a student class
 """
 
 
